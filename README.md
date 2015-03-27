@@ -2,5 +2,9 @@ Contained are charts and their corresponding datasets for a few aspects of Commu
 
 Links of the Charts See
 <http://borncamp.com/cdbg/2014-categorical-cdbg.html> 
+
+
 <http://borncamp.com/cdbg/2014-cdbg-accepted-proposals.html> 
+
+
 <http://borncamp.com/cdbg/2014-cdbg-disbursments.html>
