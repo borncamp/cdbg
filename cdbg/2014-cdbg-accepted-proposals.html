@@ -1,0 +1,397 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 1500px;
+      height: 2000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+<h1>Annual Action Plan 2014</h1>
+    
+    <div id = 'charttest' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawcharttest()
+    });
+    function drawcharttest(){  
+      var opts = {
+ "dom": "charttest",
+"width": "1500",
+"height":   2000,
+"x": "Expense",
+"y": "Amount",
+"type": "multiBarHorizontalChart",
+"id": "charttest" 
+},
+        data = [
+ {
+ "Expense": "Literacy Volunteers Literacy ",
+"Amount":          10300 
+},
+{
+ "Expense": "Friends ",
+"Amount":          12900 
+},
+{
+ "Expense": "West Side NHS Translation ",
+"Amount":          15700 
+},
+{
+ "Expense": "Pratt Willert Community Center ",
+"Amount":          16100 
+},
+{
+ "Expense": "FLARE ",
+"Amount":          16500 
+},
+{
+ "Expense": "West Side Community Services Crime prevention ",
+"Amount":          20000 
+},
+{
+ "Expense": "Hispanics United of Buffalo ",
+"Amount":          20100 
+},
+{
+ "Expense": "Valley Community Association ",
+"Amount":          20100 
+},
+{
+ "Expense": "PEOPLE ",
+"Amount":          20400 
+},
+{
+ "Expense": "Seneca-Babcock Community Center ",
+"Amount":          20700 
+},
+{
+ "Expense": "Seneca-Babcock Community Center ",
+"Amount":          20700 
+},
+{
+ "Expense": "Old First Ward Community Center ",
+"Amount":          21500 
+},
+{
+ "Expense": "Hennepin Park Community Center ",
+"Amount":          22000 
+},
+{
+ "Expense": "Old First Ward Community Center ",
+"Amount":          23400 
+},
+{
+ "Expense": "Back to Basics Anti-violence ",
+"Amount":          24000 
+},
+{
+ "Expense": "Delavan Grider Community Center ",
+"Amount":          25900 
+},
+{
+ "Expense": "Neighborhood Legal Services Fair housing ",
+"Amount":          27900 
+},
+{
+ "Expense": "King Urban Life Center ",
+"Amount":          31900 
+},
+{
+ "Expense": "Schiller Park Senior Center ",
+"Amount":          33000 
+},
+{
+ "Expense": "William Emslie YMCA ",
+"Amount":          33400 
+},
+{
+ "Expense": "Buffalo Urban League Foreclosure ",
+"Amount":          35800 
+},
+{
+ "Expense": "North Buffalo Community Center ",
+"Amount":          36700 
+},
+{
+ "Expense": "Computers for Children ",
+"Amount":          39200 
+},
+{
+ "Expense": "Gloria Parks Community Center ",
+"Amount":          39700 
+},
+{
+ "Expense": "Pratt Willert Community Center ",
+"Amount":          39700 
+},
+{
+ "Expense": "North Buffalo Community Center ",
+"Amount":          43300 
+},
+{
+ "Expense": "Hope Center  Polonia Hall ",
+"Amount":          45000 
+},
+{
+ "Expense": "Delavan Grider Community Center ",
+"Amount":          49100 
+},
+{
+ "Expense": "African Cultural Center ",
+"Amount":          54700 
+},
+{
+ "Expense": "Legal Aid Bureau Foreclosure ",
+"Amount":          55200 
+},
+{
+ "Expense": "Matt Urban Center ",
+"Amount":          55400 
+},
+{
+ "Expense": "CRUCIAL ",
+"Amount":          56000 
+},
+{
+ "Expense": "Gloria Parks Community Center ",
+"Amount":          59300 
+},
+{
+ "Expense": "HOME Fair housing ",
+"Amount":          59300 
+},
+{
+ "Expense": "Belle Center ",
+"Amount":          60000 
+},
+{
+ "Expense": "CEO Employment ",
+"Amount":          60000 
+},
+{
+ "Expense": "West Side Community Services  CEM  Los Tainos ",
+"Amount":          61500 
+},
+{
+ "Expense": "Belle Center AmeriCorps ",
+"Amount":          64500 
+},
+{
+ "Expense": "ABLEY ",
+"Amount":          68800 
+},
+{
+ "Expense": "Matt Urban Center ",
+"Amount":          77300 
+},
+{
+ "Expense": "West Side Community Services ",
+"Amount":          78500 
+},
+{
+ "Expense": "Schiller Park Community Center ",
+"Amount":          80500 
+},
+{
+ "Expense": "Police Athletic League ",
+"Amount":          88400 
+},
+{
+ "Expense": "Northwest Buffalo Community Center ",
+"Amount":          88700 
+},
+{
+ "Expense": "Program delivery: City ",
+"Amount":         100000 
+},
+{
+ "Expense": "Program delivery: City ",
+"Amount":         100000 
+},
+{
+ "Expense": "Northwest Buffalo Community Center ",
+"Amount":         104700 
+},
+{
+ "Expense": "South Buffalo Community Association ",
+"Amount":         105600 
+},
+{
+ "Expense": "Program delivery: NYBDC ",
+"Amount":         109000 
+},
+{
+ "Expense": "Program delivery: CHDOs ",
+"Amount":         135550 
+},
+{
+ "Expense": "Citizen Services City of Buffalo Crime prevention ",
+"Amount":         146700 
+},
+{
+ "Expense": "Program delivery: City ",
+"Amount":         186000 
+},
+{
+ "Expense": "Autumnwood Senior Center ",
+"Amount":         200000 
+},
+{
+ "Expense": "Program delivery: City ",
+"Amount":         210000 
+},
+{
+ "Expense": "Manhattan Park ",
+"Amount":         275000 
+},
+{
+ "Expense": "Walden Park ",
+"Amount":         275000 
+},
+{
+ "Expense": "Program delivery: CBOs ",
+"Amount":         352000 
+},
+{
+ "Expense": "AE and Contingency ",
+"Amount":         390000 
+},
+{
+ "Expense": "Program delivery: Belmont ",
+"Amount":         396000 
+},
+{
+ "Expense": "Acquisition  rehab: CHDOs ",
+"Amount":         406650 
+},
+{
+ "Expense": "Other ",
+"Amount":         519400 
+},
+{
+ "Expense": "Persons with AIDS ",
+"Amount":         533500 
+},
+{
+ "Expense": "Gloria Parks Community Center ",
+"Amount":         540000 
+},
+{
+ "Expense": "Emergency repairs: owners ",
+"Amount":         684300 
+},
+{
+ "Expense": "Seniors ",
+"Amount":         753000 
+},
+{
+ "Expense": "Northwest Buffalo Community Center ",
+"Amount":         770000 
+},
+{
+ "Expense": "Youth ",
+"Amount":         817700 
+},
+{
+ "Expense": "Sidewalks ",
+"Amount":         846500 
+},
+{
+ "Expense": "Substantial rehab: owners ",
+"Amount":        1000000 
+},
+{
+ "Expense": "Homeless ",
+"Amount":        1009000 
+},
+{
+ "Expense": "Streets ",
+"Amount":        1063500 
+},
+{
+ "Expense": "Section 108 loan repayment ",
+"Amount":        1175600 
+},
+{
+ "Expense": "Substantial rehab  new construction: rentals ",
+"Amount":        1212700 
+},
+{
+ "Expense": "Demolitions ",
+"Amount":        1700000 
+},
+{
+ "Expense": "CDBG Planning Overhead City ",
+"Amount":        2890257 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+chart
+  .margin({
+ "left":    250
+})          
+         
+        
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>

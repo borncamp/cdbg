@@ -1,0 +1,345 @@
+<!doctype HTML>
+<meta charset = 'utf-8'>
+<html>
+  <head>
+    <link rel='stylesheet' href='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.css'>
+    
+    <script src='//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js' type='text/javascript'></script>
+    <script src='//d3js.org/d3.v3.min.js' type='text/javascript'></script>
+    <script src='//cdnjs.cloudflare.com/ajax/libs/nvd3/1.1.15-beta/nv.d3.min.js' type='text/javascript'></script>
+    <script src='//nvd3.org/assets/lib/fisheye.js' type='text/javascript'></script>
+    
+    <style>
+    .rChart {
+      display: block;
+      margin-left: auto; 
+      margin-right: auto;
+      width: 2000px;
+      height: 2000px;
+    }  
+    </style>
+    
+  </head>
+  <body >
+<h1>CDBG Disbursements 2014</h1>
+    
+    <div id = 'chart22cd5a8fc6dc' class = 'rChart nvd3'></div>    
+    <script type='text/javascript'>
+ $(document).ready(function(){
+      drawchart22cd5a8fc6dc()
+    });
+    function drawchart22cd5a8fc6dc(){  
+      var opts = {
+ "dom": "chart22cd5a8fc6dc",
+"width":   2000,
+"height":   2000,
+"x": "Organization",
+"y": "Payments",
+"type": "multiBarHorizontalChart",
+"id": "chart22cd5a8fc6dc" 
+},
+        data = [
+ {
+ "Organization": "BUFFALO URBAN RENEWAL AGENCY/FCA",
+"Payments":     6149276.56 
+},
+{
+ "Organization": "DESTRO &  BROTHERS CONCRETE CO INC",
+"Payments":     2458669.37 
+},
+{
+ "Organization": "MILLER ENTERPRISES INCORPORATED",
+"Payments":         739623 
+},
+{
+ "Organization": "HANNAH DEMOLITION INC",
+"Payments":         692010 
+},
+{
+ "Organization": "HADALA CORPORATION",
+"Payments":       607287.5 
+},
+{
+ "Organization": "P & J CONSTRUCTION COMPANY INC",
+"Payments":         598500 
+},
+{
+ "Organization": "NIAGARA ENVIRONMENTAL & WRECKING INC",
+"Payments":         374858 
+},
+{
+ "Organization": "NUSSBAUMER & CLARKE INCORPORATED",
+"Payments":       368531.2 
+},
+{
+ "Organization": "REGIONAL ENVIRONMENTAL DEMOLITION INC",
+"Payments":         323415 
+},
+{
+ "Organization": "AUDUBON ARCHITECTURE ENGINEERING SURVEYING &",
+"Payments":       305771.5 
+},
+{
+ "Organization": "MASTERS EDGE INCORPORATED",
+"Payments":      259166.07 
+},
+{
+ "Organization": "WATTS ARCHITECTURE AND ENGINEERING PC",
+"Payments":      216471.11 
+},
+{
+ "Organization": "TRAUTMAN KING MARKWART ASSOCIATES PC",
+"Payments":      205910.31 
+},
+{
+ "Organization": "NORTHWEST BUFFALO COMMUNITY CENTER",
+"Payments":         193446 
+},
+{
+ "Organization": "CENTER FOR EMPLOYMENT OPPORTUNITIES INC",
+"Payments":      188798.27 
+},
+{
+ "Organization": "GEITER DONE OF WNY INCORPORATED",
+"Payments":         159450 
+},
+{
+ "Organization": "ERIE REGIONAL HOUSING DEVELOPMENT",
+"Payments":      153831.46 
+},
+{
+ "Organization": "NICHTER CONSTRUCTION INC",
+"Payments":         149500 
+},
+{
+ "Organization": "POLISH COMMUNITY CENTER OF BUFFALO INC",
+"Payments":      132728.73 
+},
+{
+ "Organization": "MASSACHUSETTS COMMUNITY CENTER AND DEVELOPMENT CO",
+"Payments":      119900.72 
+},
+{
+ "Organization": "SOUTH BUFFALO COMMUNITY ASSOCIATION",
+"Payments":         105601 
+},
+{
+ "Organization": "SC MARTIN GROUP INC",
+"Payments":         103070 
+},
+{
+ "Organization": "UNIVERSITY DISTRICT COMMUNITY DEVELOPMENT ASSN INC",
+"Payments":          98988 
+},
+{
+ "Organization": "BUFFALO URBAN LEAGUE",
+"Payments":       98731.21 
+},
+{
+ "Organization": "POLICE ATHLETIC LEAGUE OF BUFFALO",
+"Payments":          88362 
+},
+{
+ "Organization": "LEGAL AID BUREAU OF BUFFALO INC",
+"Payments":       83162.46 
+},
+{
+ "Organization": "METRO COMMUNITY DEVELOPMENT CORP",
+"Payments":       78808.24 
+},
+{
+ "Organization": "A B L E Y INCORPORATED",
+"Payments":       72810.21 
+},
+{
+ "Organization": "AFRICAN AMERICAN CULTURAL CENTER",
+"Payments":       70956.49 
+},
+{
+ "Organization": "NORTH BUFFALO COMMUNITY DEVELOPMENT",
+"Payments":       60763.83 
+},
+{
+ "Organization": "HOUSING OPPORTUNITIES MADE EQUAL",
+"Payments":          59303 
+},
+{
+ "Organization": "YOUNG MENS CHRISTIAN ASSOC BUFFALO NIAGARA",
+"Payments":       58717.96 
+},
+{
+ "Organization": "ARIA CONTRACTING CORPORATION",
+"Payments":          57100 
+},
+{
+ "Organization": "MLP PLUMBING & MECHANICAL INC",
+"Payments":          57000 
+},
+{
+ "Organization": "CITY OF BUFFALO DIV OF TREASURY",
+"Payments":       56568.55 
+},
+{
+ "Organization": "SCHILLER PARK COMMUNITY SERVICES",
+"Payments":       56089.76 
+},
+{
+ "Organization": "CITY MISSION SOCIETY INC",
+"Payments":          50659 
+},
+{
+ "Organization": "SENECA BABCOCK COMMUNITY ASSOCIATION INC",
+"Payments":       48520.75 
+},
+{
+ "Organization": "COMMUNITY ACTION ORGANIZATION OF ERIE COUNTY INC",
+"Payments":       46280.89 
+},
+{
+ "Organization": "OLD FIRST WARD COMMUNITY ASSOC",
+"Payments":          44881 
+},
+{
+ "Organization": "CRUCIAL HUMAN SERVICES CENTER",
+"Payments":       43242.84 
+},
+{
+ "Organization": "BUFFALO NEWS",
+"Payments":       38441.95 
+},
+{
+ "Organization": "GROVE ROOFING SERVICES INC",
+"Payments":          35150 
+},
+{
+ "Organization": "CONCERNED ECUMENICAL MINISTRIES",
+"Payments":       32157.96 
+},
+{
+ "Organization": "KING URBAN LIFE CENTER",
+"Payments":          31856 
+},
+{
+ "Organization": "NEIGHBORHOOD LEGAL SERVICES INC",
+"Payments":       28136.21 
+},
+{
+ "Organization": "HOMELESS ALLIANCE OF WESTERN NEW YORK",
+"Payments":       27847.81 
+},
+{
+ "Organization": "BACK TO BASICS OUTREACH MINISTRIES",
+"Payments":       23787.28 
+},
+{
+ "Organization": "VALLEY COMMUNITY ASSOCIATION INC",
+"Payments":          20067 
+},
+{
+ "Organization": "TITANIUM DEMOLITION & REMEDIATION GROUP INC",
+"Payments":          19700 
+},
+{
+ "Organization": "HISPANICS UNITED OF BUFFALO",
+"Payments":       18980.65 
+},
+{
+ "Organization": "PEOPLE INC",
+"Payments":       18612.74 
+},
+{
+ "Organization": "JC WILLIAMS GROUP LTD",
+"Payments":          17000 
+},
+{
+ "Organization": "WEST SIDE N H S",
+"Payments":        16903.8 
+},
+{
+ "Organization": "FILLMORE LEROY AREA RESIDENTS INC",
+"Payments":       16499.91 
+},
+{
+ "Organization": "COMPUTERS FOR CHILDREN INC",
+"Payments":       16368.18 
+},
+{
+ "Organization": "WESTERN NEW YORK LAW CENTER INC",
+"Payments":          15694 
+},
+{
+ "Organization": "FRIENDS INC",
+"Payments":       13614.43 
+},
+{
+ "Organization": "TITAN DEVELOPMENT INCORPORATED",
+"Payments":          11870 
+},
+{
+ "Organization": "LITERACY VOLUNTEERS BUFFALO & ERIE",
+"Payments":       10341.18 
+},
+{
+ "Organization": "TRASON DEVELOPMENT CORP",
+"Payments":        3058.05 
+},
+{
+ "Organization": "LOS TAINOS SENIOR CITIZENS CENTER",
+"Payments":         382.45 
+} 
+]
+  
+      if(!(opts.type==="pieChart" || opts.type==="sparklinePlus" || opts.type==="bulletChart")) {
+        var data = d3.nest()
+          .key(function(d){
+            //return opts.group === undefined ? 'main' : d[opts.group]
+            //instead of main would think a better default is opts.x
+            return opts.group === undefined ? opts.y : d[opts.group];
+          })
+          .entries(data);
+      }
+      
+      if (opts.disabled != undefined){
+        data.map(function(d, i){
+          d.disabled = opts.disabled[i]
+        })
+      }
+      
+      nv.addGraph(function() {
+        var chart = nv.models[opts.type]()
+          .width(opts.width)
+          .height(opts.height)
+          
+        if (opts.type != "bulletChart"){
+          chart
+            .x(function(d) { return d[opts.x] })
+            .y(function(d) { return d[opts.y] })
+        }
+          
+         
+        chart
+  .margin({
+ "left":    400 
+})
+          
+        
+
+        
+        
+        
+      
+       d3.select("#" + opts.id)
+        .append('svg')
+        .datum(data)
+        .transition().duration(500)
+        .call(chart);
+
+       nv.utils.windowResize(chart.update);
+       return chart;
+      });
+    };
+</script>
+    
+    <script></script>    
+  </body>
+</html>
